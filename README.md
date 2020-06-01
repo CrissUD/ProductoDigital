@@ -17,7 +17,7 @@ Dentro del curso se implementan varias características tanto en HTML como en CS
 
 # Resultado
 
-A continuación se muestra el resultado del producto digital, si quiere ver la pagina por usted mismo puede entrar al siguiente [link](https://crissud.github.io/PortafolioWebPlantilla/portafolio_web/index.html).
+A continuación se muestra el resultado del producto digital, si quiere ver la pagina por usted mismo puede entrar al [siguiente link](https://crissud.github.io/ProductoDigital/ProyectoVentas/index.html).
 
 <div align='center'>
     <img  src='https://i.imgur.com/eUDBR5V.png'>
