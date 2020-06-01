@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+</head>
+<body>
+    <!-- Aquí Empieza el navbar -->
+    <nav class="fadeInDowm">
+        <div class="logo-image">
+            <img src="./resources/images/logo.png" alt="logo-nav">
+        </div>
+        <div class="nav_options">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Faqs</a></li>
+                <li><a href="./producto.html">Producto y descripción</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Aquí Termina el navbar -->
+    <!-- Aquí Empieza el Form -->
+    <section class="pay-section">
+        <div class="container">
+            <div class="row">
+                <div class="column col-4">
+                    <div class="pay-module">
+                        <figure>
+                            <img src="./resources/images/box2.png" alt="box2">
+                        </figure>
+                        <div class="product-details">
+                            <h3>Producto 1</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quas illo suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-7">
+                    <div class="pay-module-form">
+                        <form name="form">
+                            <label for="first_name">Nombre</label>
+                            <input class="input-text" type="text" placeholder="NombreUsuario" id="input0" name="first_name">
+                            <label for="email">Email</label>
+                            <input class="input-text" type="text" placeholder="EmailUsuario" id="input1" name="email">
+                            <label for="night_phone_a">Teléfono</label>
+                            <input class="input-text" type="text" placeholder="TelefonoUsuario" id="input2" name="night_phone_a">
+                            <input class="main-button submit" type="submit" value="Confirmar Pago" onclick="validar()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Aquí Termina el Form -->
+
+    <!-- Aquí Empieza el footer -->
+    <footer>
+        <p>© Términos y Condiciones CrissUD</p>
+        <p>Contacto: <a href="mailto:cfpatinoc@correo.udistrital.edu.co">cfpatinoc@correo.udistrital.edu.co</a></p>
+    </footer>
+    <!-- Aquí Termina el footer -->
+    <script src="./javascript/app.js"></script>
+</body>
+</html>

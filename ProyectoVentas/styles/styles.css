@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ /* --------------------------- VARIABLES ------------------------------------ */
+:root{
+    --blue-color:#0099FF;
+    --white-color: #fff;
+    --black-color:#333;
+    --dark-gray-color: #666;
+    --space: 10px;
+    --box:0px 0px 18px 2px rgba(173,173,173,1);
+    --box-blue:0px 0px 18px 2px #0099FF;
+}
+
+/* -------------------- Configuraciones Generales  -------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, p{
+    color: var(--dark-gray-color);
+}
+
+label{
+    font-size: 12px;
+    display: block;
+}
+
+input{
+    display: block;
+    margin: var(--space) 0;
+    height: 30px;
+    font-size: 14px;
+}
+/* -------------------- Configuraciones del navbar -------------------- */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blue-color);
+    padding: var(--space) 20px;
+    color: var(--white-color);
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: var(--white-color);
+}
+
+/* -------------------- Configuraciones del main section -------------------- */
+.main-section{
+    overflow: hidden;
+}
+
+.main-title{
+    padding: 5% 15%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    z-index: 1;
+    width: 300px;
+    padding: var(--space);
+}
+
+.product-content{
+    padding: 20px;
+    background: var(--white-color);
+    border-radius: 12px;
+    box-shadow: var(--box);
+}
+
+.image-content{
+    text-align: center;
+}
+
+.product-content h1{
+    font-size: 22px;
+}
+
+.main-button{
+    background: var(--blue-color);
+    color: var(--white-color);
+    padding: var(--space);
+    font-size: 12px;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.main-button:hover{
+    background: rgb(47, 172, 255);
+}
+
+.main-section svg{
+    margin-top: -280px;
+}
+
+/* -------------------- Configuraciones del Features -------------------- */
+
+.features-section{
+    margin-bottom: 40px;
+}
+
+.features-section svg{
+    margin-top: -5px;
+}
+
+.features-title,
+.references-title{
+    margin-top: 0px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.features-title{
+    color: var(--blue-color);
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature{
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.6s ease-out;
+}
+
+.feature-content{
+    padding: 25px;
+}
+
+.feature h1{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.feature:hover{
+    box-shadow: var(--box-blue);
+}
+
+hr{
+    margin: 40px;
+    border-top: 1px solid #ccc;
+}
+
+/* -------------------- Configuraciones del References -------------------- */
+
+.references-section{
+    margin: 40px auto;
+}
+.references{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.reference{
+    width: 270px;
+    position: relative;
+    margin: 20px;
+}
+
+.reference figure{
+    margin: 0;
+}
+
+.reference img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.reference-cover{
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,153,255,0.8), 35%,rgba(0,0,0,0.0));
+    top: 0;
+    height: 99%;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 20px;
+    transition: all 0.5s ease-out;
+}
+
+.reference-cover:hover{
+    opacity: 1;
+}
+
+.reference-cover p,
+.reference-cover h1{
+    color: #F8F8F8;
+    margin: 5px 10px;
+}
+
+/* -------------------- Configuraciones del footer -------------------- */
+
+footer{
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space);
+}
+
+footer p, footer a{
+    color: var(--white-color);
+}
+
+/* -------------------- Configuraciones de Productos -------------------- */
+
+.row{
+    margin: 40px auto;
+}
+
+.card-image{
+    text-align: center;
+}
+
+.card-descr{
+    padding: 10px 40px;
+}
+
+/* -------------------- Configuraciones de Ventas -------------------- */
+
+.pay-section{
+    margin: 110px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pay-module, .pay-module-form{
+    background: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.pay-module{
+    text-align: center;
+}
+
+.product-details{
+    text-align: left;
+    padding: 5px 40px;
+}
+
+.pay-module-form form{
+    padding: 22px;
+}
+
+.pay-module-form input{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.input-text{
+    border: solid 2px rgb(132, 206, 255);
+}
+
+.submit{
+    color: var(--white-color);
+    height: 40px;
+    margin-top: 25px;
+}
+
+::placeholder { 
+    color: var(--dark-gray-color);
+}
+
+
+@media(max-width: 600px){
+    .main-title{
+        padding: 5%;
+    }
+}
