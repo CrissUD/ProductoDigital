@@ -1,4 +1,4 @@
-# Portafolio Web Plantilla
+# Producto Digital Ventas en Linea
 
 Esta es una pagina web creada después de dar una continuidad del curso de **HTML y CSS** de **Platzi** el cual puede ser visto a traves del [Siguiente Link](https://platzi.com/clases/html-css/). En la cual se simula un sistema de ventas en internet.
 
